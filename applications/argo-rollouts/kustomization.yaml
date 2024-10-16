@@ -4,5 +4,9 @@ kind: Kustomization
 resources:
 - argo-rollouts.yaml
 
-patchesStrategicMerge:
-- patch.yaml
+patches:
+- target:
+    kind: Deployment
+    name: argocd-server
+    version: apps/v1
+  path: patch.yaml
