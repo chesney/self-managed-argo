@@ -7,6 +7,6 @@ Using this pattern we deploy ArgoCD as an Application.
 
 `kubectl apply -f applications.yaml`
 
-2. Now, you can add the Application in argo cd. Set repository url as this repository and the path as `applications`.
+2. Now, the argo cd applicatiion called `Applications` should be available in the argo cd ui.
 
-3. Sync the Application in argo cd.
+3. Press on the sync button of the `Applications` application.
