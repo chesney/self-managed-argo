@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   destination:
-    namespace: argo-workflows
+    namespace: argocd
     server: https://kubernetes.default.svc
   source:
     chart: argo-workflows
@@ -16,7 +16,7 @@ spec:
       releaseName: workflows
   syncPolicy:
     automated:
-      prune: false
+      prune: true
       selfHeal: true
       allowEmpty: false
     syncOptions:
