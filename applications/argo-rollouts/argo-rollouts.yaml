@@ -10,10 +10,9 @@ spec:
     server: https://kubernetes.default.svc
   source:
     chart: argo-rollouts
-    repoURL: http://argoproj.github.io/argo-helm
+    repoURL: https://argoproj.github.io/argo-helm
     targetRevision: 2.22.0
-    helm:
-      releaseName: rollouts
+    chart: rollouts
   syncPolicy:
     automated:
       prune: false # Specifies if resources should be pruned during auto-syncing ( false by default ).
