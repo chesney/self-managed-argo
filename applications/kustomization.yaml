@@ -5,3 +5,5 @@ resources:
 - argo-rollouts
 - argocd
 - book-api
+- argo-workflows
+- argo-workflows-ui
