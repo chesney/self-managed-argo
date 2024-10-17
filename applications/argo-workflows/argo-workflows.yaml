@@ -13,7 +13,7 @@ spec:
     repoURL: https://argoproj.github.io/argo-helm
     targetRevision: 3.5.11
     helm:
-      releaseName: workflows
+      releaseName: argo-workflows
   syncPolicy:
     automated:
       prune: true
