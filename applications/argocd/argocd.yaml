@@ -9,12 +9,11 @@ spec:
     namespace: argocd
     server: https://kubernetes.default.svc
   source:
-    chart: argo-cd
-    repoURL: https://argoproj.github.io/argo-helm
-    targetRevision: 5.27.1
+    chart: bitnamicharts/argo-cd
+    repoURL: registry-1.docker.io
+    targetRevision: 7.0.18
     helm:
       releaseName: argo
-      insecure: true # This is where you specify insecure TLS verification
   syncPolicy:
     automated:
       prune: false # Specifies if resources should be pruned during auto-syncing ( false by default ).
