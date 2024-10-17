@@ -14,7 +14,6 @@ spec:
     targetRevision: 0.42.5
     helm:
       releaseName: argo-workflows
-      insecure: true # This is where you specify insecure TLS verification
   syncPolicy:
     automated:
       prune: true
