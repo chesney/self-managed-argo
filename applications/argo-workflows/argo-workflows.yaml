@@ -10,7 +10,7 @@ spec:
     server: https://kubernetes.default.svc
   source:
     chart: argo-workflows
-    repoURL: oci://ghcr.io/argoproj/argo-workflows-chart
+    repoURL: ghcr.io/argoproj/argo-workflows-chart
     targetRevision: 0.42.5
     helm:
       releaseName: argo-workflows
