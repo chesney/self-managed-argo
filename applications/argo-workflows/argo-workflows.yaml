@@ -10,12 +10,12 @@ spec:
     server: https://kubernetes.default.svc
   source:
     chart: argo/argo-workflows
-    repoURL: registry-1.docker.io
+    repoURL: ghcr.io
     targetRevision: 0.42.5
     helm:
       releaseName: argo-workflows
-      valuesFiles:
-      - values.yaml
+      #valuesFiles:
+      #- values.yaml
   syncPolicy:
     automated:
       prune: true
