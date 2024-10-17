@@ -9,11 +9,13 @@ spec:
     namespace: argocd
     server: https://kubernetes.default.svc
   source:
-    chart: argo-workflows
-    repoURL: ghcr.io/argoproj/argo-workflows-chart
+    chart: argo/argo-workflows
+    repoURL: registry-1.docker.io
     targetRevision: 0.42.5
     helm:
       releaseName: argo-workflows
+      valuesFiles:
+      - values.yaml
   syncPolicy:
     automated:
       prune: true
